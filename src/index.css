@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Optional Netflix-like font face if available */
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 400;
+  font-display: optional;
+  src: local('Netflix Sans'), local('NetflixSans');
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 500;
+  font-display: optional;
+  src: local('Netflix Sans Medium'), local('NetflixSans-Medium');
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  font-display: optional;
+  src: local('Netflix Sans Bold'), local('NetflixSans-Bold');
+}
